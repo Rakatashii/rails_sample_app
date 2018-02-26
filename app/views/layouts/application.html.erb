@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SampleApp</title>
-    <%= csrf_meta_tags %>
-
+    <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
+    <!-- WHAT DOES THIS DO??? makes sense when we have a provide(:title, "#{title}"), but doesn't make sense to say that it is structuring the webpages so that we can request /static_pages/home, etc... We could already do that.. -->
+    <%= csrf_meta_tags %> <!-- so this is default... specifies backward compatibility for html -->
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
