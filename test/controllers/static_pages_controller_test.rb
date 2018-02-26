@@ -26,6 +26,10 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", "About | #{@base_title}"
     assert_response :success
   end
-  # 3 runs, 2 assertions, 0 failures, 1 errors, 0 skips
-
+  
+  test "should get contact" do
+    get static_pages_contact_url
+    assert_select "title", "Contact | #{@base_title}"
+    assert_response :success
+  end
 end
