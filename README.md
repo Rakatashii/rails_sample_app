@@ -1,5 +1,6 @@
 # Ruby on Rails Tutorial sample application
 
+URL: https://rocky-depths-47706.herokuapp.com/
 This is the sample application for [*Ruby on Rails Tutorial: Learn Web Development with Rails*] (https:...)
 ...
 
