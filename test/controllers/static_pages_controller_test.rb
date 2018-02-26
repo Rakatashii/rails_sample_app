@@ -7,7 +7,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
     #skip
     get static_pages_home_url #how is this case generated
-    assert_select "title", "Home | #{@base_title}"
+    assert_select "title", "#{@base_title}"
     assert_response :success 
     #The response :success is an abstract representation of the underlying HTTP status code (in this case, '200 OK')
   end
