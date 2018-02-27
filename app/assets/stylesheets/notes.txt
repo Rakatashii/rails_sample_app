@@ -1,0 +1,5 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+work because of:
+gem 'bootstrap-sass', '3.3.7' # watch
+in the Gemfile
