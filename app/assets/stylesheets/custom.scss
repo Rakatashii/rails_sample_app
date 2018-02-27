@@ -4,3 +4,25 @@
   Judging by comment-style, this is CSS.
   Requires the 'bootstrap-sass' gem installed + '$bundle install --without production'
 */
+
+/* universal */
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
