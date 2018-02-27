@@ -13,6 +13,7 @@ gem 'jbuilder',     '2.7.0'
 group :development, :test do
   gem 'sqlite3', '1.3.13'
   gem 'byebug',  '9.0.6', platform: :mri
+  gem "rspec-rails"
 end
 
 group :development do
@@ -35,6 +36,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "rspec-rails", :group => [:development, :test]
 
 =begin OLD GEMFILE
 source 'https://rubygems.org'
