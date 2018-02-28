@@ -1,0 +1,11 @@
+Code                          Matching HTML
+
+assert_select "div"           <div>foobar</div>
+assert_select "div", "foobar" <div>foobar</div>
+assert_select "div.nav"       <div class="nav">foobar</nav>
+assert_select "div#an_id"     <div id="an_id">foobar</div>
+assert_select "div[name=yo]"  <div name="yo">hey</div>
+assert_select "a[href=?]",    <a href="\">foo</a>
+  '/', count: 1
+assert_select "a[href=?]",    <a href="\">foo</a>
+  '/', text: "foo"
