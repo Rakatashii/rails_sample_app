@@ -16,7 +16,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get help" do
     #skip
     #get static_pages_help_url
-    get help_path
+    get helf_path
     assert_select "title", "Help | #{@base_title}"
     assert_response :success
   end
