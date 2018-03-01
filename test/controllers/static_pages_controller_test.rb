@@ -1,4 +1,4 @@
-require 'test_helper' #where does this come from? What happened to 'minitest/autorun', 'test-unit', + ~rspec?
+require 'test_helper' # Note that this is not the same as app/helpers/application_helper.rb... Rather, 'test_helper', which applies to all controllers/views/models, itself includes module ApplicationHelper.
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   def setup
@@ -16,7 +16,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get help" do
     #skip
     #get static_pages_help_url
-    get helf_path
+    get help_path
     assert_select "title", "Help | #{@base_title}"
     assert_response :success
   end

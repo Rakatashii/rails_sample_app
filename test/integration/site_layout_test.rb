@@ -6,10 +6,22 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     # get #_path + assert_template 'static_pages/#' go together.
     get root_path
     assert_template 'static_pages/home'
+    assert_select "title", full_title()
+    
+    get home_path
+    assert_template 'static_pages/home'
+    assert_select "title", full_title()
+    
     get help_path
     assert_template 'static_pages/help'
+    assert_select "title", full_title("Help")
     
-    assert_select "title", "Help | Ruby on Rails Tutorial Sample App"
+    get contact_path
+    assert_select "title", full_title("Contact")
+    
+    get signup_path
+    assert_template 'users/new'
+    assert_select "title", full_title("Sign up")
     
     assert_select "a[href=?]", root_path, count: 2
     #count is like ~# of occurences
@@ -17,7 +29,5 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", about_path
     assert_select "a[href=?]", contact_path
     
-    get contact_path
-    assert_select "title", full_title("Contact")
   end
 end
