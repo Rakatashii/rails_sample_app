@@ -12,5 +12,7 @@ class User < ApplicationRecord
                     format: { with: VALID_EMAIL_REGEX }, uniqueness: { case_sensitive: false }
 # This test didn't work before with just uniqueness: true. That makes sense b/c :case_sensitive prob did nothing on its own. But, how is :uniqueness automatically true now, now that it has case_sensitive: false as value?
 # the :uniqueness validation is case sensitive by default. In order to ensure that duplicate_user fails when duplicate_user.email = @user.email.upcase, we must specify that we want uniqueness to be case insensitive with :case_sensitive set to false.
-  #has_secure_password
+  has_secure_password
+  validates :password, presence: true,
+                       length: { minimum: 6 }
 end
