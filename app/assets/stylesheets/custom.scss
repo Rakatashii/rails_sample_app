@@ -93,31 +93,21 @@ aside {
     }
     span {
       display: block;
-<<<<<<< HEAD
       margin-buttom: 3px;
-=======
       margin-bottom: 3px;
->>>>>>> signup
       line-height: 1;
     }
     h1 {
       font-size: 1.4em;
       text-align: left;
-<<<<<<< HEAD
       letter-specing: -1px;
-=======
       letter-spacing: -1px;
->>>>>>> signup
       margin-bottom: 3px;
       margin-top: 0px;
     }
   }
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> signup
 .gravatar {
   float: left;
   margin-right: 10px;
@@ -127,8 +117,6 @@ aside {
   margin-top: 15px;
 }
 
-<<<<<<< HEAD
-=======
 /* miscellaneous */
 
 .debug_dump {
@@ -139,7 +127,6 @@ aside {
   @include box_sizing;
 }
 
->>>>>>> signup
 /* forms */
 
 input, textarea, select, .uneditable-input {
@@ -153,7 +140,6 @@ input {
   height: auto !important;
 }
 
-<<<<<<< HEAD
 /* miscellaneous */
 
 .debug_dump {
@@ -163,6 +149,5 @@ input {
   margin-top: 45px;
   @include box_sizing;
 }
-=======
->>>>>>> signup
+
 
