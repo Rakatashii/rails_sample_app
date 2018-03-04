@@ -5,6 +5,15 @@
 
 $white: #fff;
 $light-grey: #777;
+$black: #000;
+
+/* mixins */
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
 
 /* mixins */
 
