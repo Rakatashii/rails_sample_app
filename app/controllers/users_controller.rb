@@ -6,7 +6,6 @@ class UsersController < ApplicationController
     @user = User.new
   end
   def create
-    #debugger #Can call params[:user], params include name, email, password, password_confirmation keys
     #debugger
     @user = User.new(user_params)
     if @user.save
