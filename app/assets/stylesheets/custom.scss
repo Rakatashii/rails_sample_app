@@ -135,6 +135,7 @@ input, textarea, select, .uneditable-input {
   margin-bottom: 15px;
   @include box_sizing;
 }
+/* w/o ^, the text-fields get jumbled together horizontally and vertically */
 
 input {
   height: auto !important;
@@ -150,4 +151,5 @@ input {
   @include box_sizing;
 }
 
+/* suprisingly, this does not seem to do anything... */
 
