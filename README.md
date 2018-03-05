@@ -1,32 +1,24 @@
-# Ruby on Rails Tutorial sample application
+# README
 
-URL: https://rocky-depths-47706.herokuapp.com/
-This is the sample application for [*Ruby on Rails Tutorial: Learn Web Development with Rails*] (https:...)
-...
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-## License
+Things you may want to cover:
 
-All source code in the ... is available under MIT/Beerware license
-...
+* Ruby version
 
-## Getting Started
+* System dependencies
 
-Clone the repo/install needed gems:
-----
-$ bundle install --without production
-----
+* Configuration
 
-Migrate the database
-----
-$ rails db:migrate
-----
+* Database creation
 
-Run the test suite to verify that everything is working correctly:
-----
-$ rails server
-----
+* Database initialization
 
-If the test suite passes, can run the app in a local server (3000)
----- 
-$ rails server
-----
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
